@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
+</head>
+
+<body>
+    <div class="insert_from">
+        <form action="" class="form">
+            <div class="form_div">
+                <label for="itemId">Item ID</label>
+                <input id="itemId" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="itemName">Item Name</label>
+                <input id="itemName" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="itemPrice">Item Price</label>
+                <input id="itemPrice" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="itemQuantity">Item Quatity</label>
+                <input id="itemQuantity" type="text" class="form_input">
+
+            </div>
+            <button onclick="getinsert()" class="insertbtn">Insert</button>
+        </form>
+    </div>
+    <div class=" delete_from">
+        <form action="" class="form">
+            <div class="form_div">
+                <label for="itemDeleteId">Item ID</label>
+                <input id="itemDeleteId" type="text" class="form_input">
+
+            </div>
+            <button onclick="getDeleteId()" class="insertbtn">Delete</button>
+        </form>
+    </div>
+    <div class="update_from">
+        <form action="" class="form">
+            <div class="form_div">
+                <label for="upitemId">Item ID</label>
+                <input id="upitemId" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="upitemName">New Item Name</label>
+                <input id="upitemName" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="upitemPrice">New Item Price</label>
+                <input id="upitemPrice" type="text" class="form_input">
+
+            </div>
+            <div class="form_div">
+                <label for="upitemQuantity">New Item Quatity</label>
+                <input id="upitemQuantity" type="text" class="form_input">
+
+            </div>
+            <button class="insertbtn">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>
