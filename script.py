@@ -25,4 +25,14 @@ def insert(uid, iName, iPrice, amount):
     insertcursor.execute(sql, (itemId, itemName, itemPrice, amount))
 
 
+@eel.expose
+def deleteItem(itemid):
+    # iId = int(itemid)
+    deletecursor = conn.cursor()
+    sql = ("DELETE FROM `billing` WHERE id = %s")
+    deletecursor.execute(sql, (itemid,))
+    conn.commit()
+    print(deletecursor.rowcount, "record(s) deleted")
+
+
 eel.start('main.html', mode='edge', size=(600, 200), )    # Start

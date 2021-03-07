@@ -23,8 +23,8 @@ function getdd(p) {
   document.getElementById('tbl').innerHTML = p;
 }
 
-function getDeleteId() {
-  let itemid = document.getElementById('delIn').value;
+function getdeleteId() {
+  let itemid = document.getElementById('itemDeleteId').value;
   eel.deleteItem(itemid);
   console.log(itemid);
 }
