@@ -11,11 +11,6 @@ conn = mysql.connector.connect(
 conn.cursor()
 
 
-# Give folder containing web files
-
-# Expose this function to Javascript
-
-
 @eel.expose
 def insert(uid, iName, iPrice, amount):
     itemId = str(uid)
