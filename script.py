@@ -13,6 +13,7 @@ conn.cursor()
 
 @eel.expose
 def insert(uid, iName, iPrice, amount):
+
     itemId = str(uid)
     itemName = str(iName)
     itemPrice = str(iPrice)
