@@ -35,4 +35,5 @@ def deleteItem(itemid):
     print(deletecursor.rowcount, "record(s) deleted")
 
 
+
 eel.start('main.html', mode='edge', size=(600, 200), )    # Start

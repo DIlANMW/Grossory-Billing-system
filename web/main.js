@@ -19,7 +19,7 @@ function getupdate() {
   eel.get()(getdd);
 }
 
-function getdd(p) {
+function gettable(p) {
   document.getElementById('tbl').innerHTML = p;
 }
 
