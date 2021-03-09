@@ -47,7 +47,7 @@
         </form>
     </div>
     <div class="update_from">
-        <form action="" class="form">
+        <form action="" class="form" onsubmit="return false">
             <div class="form_div">
                 <label for="upitemId">Item ID</label>
                 <input id="upitemId" type="text" class="form_input">
@@ -68,7 +68,7 @@
                 <input id="upitemQuantity" type="text" class="form_input">
 
             </div>
-            <button class="insertbtn">Update</button>
+            <button onclick="update();getupdate()" class="insertbtn">Update</button>
             <!-- <button onclick="getupdate()" class="insertbtn">get</button> -->
         </form>
         <table id=tbl>

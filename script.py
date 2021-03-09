@@ -60,8 +60,20 @@ def gettableData():
     return updatedTable
 
 
-# @eel.expose
-# def update():
+@eel.expose
+def updateDb(upToitemId, upToitemName, upToitemPrice, upToitemQuantity):
+
+    newItemId = str(upToitemId)
+    newItemName = str(upToitemName)
+    newItemPrice = str(upToitemPrice)
+    newupQuantity = str(upToitemQuantity)
+    updatecursor = conn.cursor()
+
+    sql = (
+        "UPDATE `billing` SET `itemName`=%s,`itemPrice`=%s,`amount`=%s WHERE id=%s")
+    updatecursor.execute(sql, (newItemName,
+                               newItemPrice, newupQuantity, newItemId))
+    print(updatecursor.rowcount, "record(s) updated")
 
 
 eel.start('main.html', mode='edge', size=(600, 200), )    # Start

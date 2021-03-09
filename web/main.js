@@ -30,10 +30,10 @@ function getdeleteId() {
 }
 
 function update() {
-  let idtoUpdate = document.getElementById('upId').value;
-  let nameUpdate = document.getElementById('upName').value;
-  let priceUpdate = document.getElementById('upPrice').value;
-  let amountUpdate = document.getElementById('upAmount').value;
+  let upToitemId = document.getElementById('upitemId').value;
+  let upToitemName = document.getElementById('upitemName').value;
+  let upToitemPrice = document.getElementById('upitemPrice').value;
+  let upToitemQuantity = document.getElementById('upitemQuantity').value;
 
-  eel.updateDb(idtoUpdate, nameUpdate, priceUpdate, amountUpdate);
+  eel.updateDb(upToitemId, upToitemName, upToitemPrice, upToitemQuantity);
 }
