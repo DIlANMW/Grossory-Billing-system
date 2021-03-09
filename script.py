@@ -42,22 +42,26 @@ def gettableData():
     cursor.execute(select_all)
     result = cursor.fetchall()
 
-    p = []
+    updatedTable = []
 
     tbl = "<tr><td>ID</td><td>Name</td><td>Email</td><td>Phone</td></tr>"
-    p.append(tbl)
+    updatedTable.append(tbl)
 
     for row in result:
         a = "<tr><td>%s</td>" % row[0]
-        p.append(a)
+        updatedTable.append(a)
         b = "<td>%s</td>" % row[1]
-        p.append(b)
+        updatedTable.append(b)
         c = "<td>%s</td>" % row[2]
-        p.append(c)
+        updatedTable.append(c)
         d = "<td>%s</td></tr>" % row[3]
-        p.append(d)
+        updatedTable.append(d)
 
-    return p
+    return updatedTable
+
+
+# @eel.expose
+# def update():
 
 
 eel.start('main.html', mode='edge', size=(600, 200), )    # Start

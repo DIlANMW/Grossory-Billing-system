@@ -19,8 +19,8 @@ function getupdate() {
   eel.gettableData()(gettable);
 }
 
-function gettable(p) {
-  document.getElementById('tbl').innerHTML = p;
+function gettable(updatedTable) {
+  document.getElementById('tbl').innerHTML = updatedTable.join('');
 }
 
 function getdeleteId() {
