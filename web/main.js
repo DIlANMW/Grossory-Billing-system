@@ -16,7 +16,7 @@ function call(totlePrice) {
 }
 
 function getupdate() {
-  eel.get()(getdd);
+  eel.gettableData()(gettable);
 }
 
 function gettable(p) {

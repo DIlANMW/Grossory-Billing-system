@@ -12,7 +12,7 @@
 
 <body>
     <div class="insert_from">
-        <form action="" class="form">
+        <form class="form" onsubmit="return false">
             <div class="form_div">
                 <label for="itemId">Item ID</label>
                 <input id="itemId" type="text" class="form_input">
@@ -33,17 +33,17 @@
                 <input id="itemQuantity" type="text" class="form_input">
 
             </div>
-            <button onclick="getinsert()" class="insertbtn">Insert</button>
+            <button onclick="getinsert();getupdate()" class="insertbtn">Insert</button>
         </form>
     </div>
-    <div class=" delete_from">
+    <div class=" delete_from" onsubmit="return false">
         <form action="" class="form">
             <div class="form_div">
                 <label for="itemDeleteId">Item ID</label>
                 <input id="itemDeleteId" type="text" class="form_input">
 
             </div>
-            <button onclick="getdeleteId()" class="insertbtn">Delete</button>
+            <button onclick="getdeleteId();getupdate()" class="insertbtn">Delete</button>
         </form>
     </div>
     <div class="update_from">
@@ -69,9 +69,10 @@
 
             </div>
             <button class="insertbtn">Update</button>
+            <!-- <button onclick="getupdate()" class="insertbtn">get</button> -->
         </form>
-        <table id =tbl>
-            </table>
+        <table id=tbl>
+        </table>
     </div>
 </body>
 
