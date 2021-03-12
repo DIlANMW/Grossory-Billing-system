@@ -29,3 +29,70 @@ h1 {
   display: flex;
   height: 10vh;
 }
+
+.form {
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 195, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+.form_title {
+  text-align: center;
+}
+
+.insert_form {
+  position: absolute;
+  justify-content: center;
+  top: 15%;
+  left: 4%;
+}
+
+.delete_form {
+  position: absolute;
+
+  top: 15%;
+  left: 36.5%;
+}
+.update_form {
+  position: absolute;
+  top: 15%;
+  left: 69%;
+}
+.form_title {
+  margin-bottom: 20px;
+}
+
+input {
+  /* Default input */
+
+  font-size: var(--normal-font-size);
+  border: solid 1px var(--border-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border-color: #d9d9d9;
+  outline: none;
+  padding: 0.7rem;
+  background: none;
+  z-index: 1;
+}
+input:focus {
+  /* Selected input */
+  border: solid 2px#4d90fe;
+}
+.form_button {
+  display: block;
+  margin-left: auto;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}

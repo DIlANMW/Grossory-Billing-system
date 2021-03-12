@@ -44,7 +44,7 @@ def gettableData():
 
     updatedTable = []
 
-    tbl = "<tr><td>ID</td><td>Name</td><td>Email</td><td>Phone</td></tr>"
+    tbl = "<tr><td>ID</td><td>Item Name</td><td>Item Price</td><td>Quantity</td></tr>"
     updatedTable.append(tbl)
 
     for row in result:
